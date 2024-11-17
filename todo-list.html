@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List | Danis Hasanbegovic</title>
+    <link rel="stylesheet" href="src/styles/_todo-list.css" />
+    <script type="module" src="src/js/todo-list.js"></script>
+  </head>
+  <body class="todo-page">
+    <main class="main-content">
+      <section id="todo-section" class="section">
+        <div class="container">
+          <h2 class="section-title">Todo List</h2>
+          <div id="todo-app" class="todo-app">
+            <div class="todo-header">
+              <input
+                type="text"
+                id="todo-input"
+                placeholder="Neue Aufgabe hinzufügen"
+              />
+              <button id="add-todo">Hinzufügen</button>
+            </div>
+            <div class="todo-filters">
+              <button class="filter-btn active" data-filter="all">Alle</button>
+              <button class="filter-btn" data-filter="active">Aktiv</button>
+              <button class="filter-btn" data-filter="completed">
+                Erledigt
+              </button>
+            </div>
+            <ul id="todo-list" class="todo-list"></ul>
+            <div class="todo-footer">
+              <span id="items-left">0 Aufgaben übrig</span>
+              <button id="clear-completed">Erledigte löschen</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
